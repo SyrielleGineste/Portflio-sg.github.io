@@ -1,29 +1,122 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
 
-/* Commentaire du code ignoré avec slash etoile */
+/* Root colors */
+:root {
+    --primary-color: #f1e0c6; /* Beige clair */
+    --secondary-color: #c49c6c; /* Marron clair */
+    --accent-color: #ff9f80; /* Orange doux pour l'accent */
+    --text-color: #333;
+}
 
+/* Body */
+body {
+    background-color: #f7f7f7;
+    color: var(--text-color);
+    line-height: 1.6;
+}
 
-
-/* Sélecteur d'élément */
-h1 {
-    color: red;  /* mettre le niveau de titre 1 en rouge*/
-    font-size: 60px;
+/* Header */
+header {
+    background-color: var(--primary-color);
+    padding: 40px 0;
     text-align: center;
-  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Sélecteur de classe */
-.important {
-    font-weight: bold;  /*met en gras*/
+header h1 {
+    font-size: 3rem;
+    color: var(--secondary-color);
 }
 
-/* Sélecteur d'ID */
-#citation {
+header .intro {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: var(--secondary-color);
+}
+
+header .contact-info {
+    margin-top: 20px;
+}
+
+header .contact-item {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header .contact-item:hover {
+    color: var(--accent-color);
+}
+
+/* Section styles */
+.section {
+    padding: 60px 20px;
+}
+
+.bg-light {
+    background-color: #fafafa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About section */
+#about .profile-image {
+    border-radius: 50%;
+    max-width: 150px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background-color: var(--primary-color);
+    border-radius: 8px;
     padding: 20px;
-    color: grey;
+    width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
+.skill:hover {
+    transform: scale(1.05);
+}
 
-p {
-    background-color: #FBF8F6;
+.skill h3 {
+    color: var(--secondary-color);
+}
 
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+    color: white;
 }
