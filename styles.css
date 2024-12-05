@@ -1,122 +1,158 @@
-/* Reset and global styles */
+/* /* Style global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Root colors */
-:root {
-    --primary-color: #f1e0c6; /* Beige clair */
-    --secondary-color: #c49c6c; /* Marron clair */
-    --accent-color: #ff9f80; /* Orange doux pour l'accent */
-    --text-color: #333;
-}
-
-/* Body */
 body {
-    background-color: #f7f7f7;
-    color: var(--text-color);
-    line-height: 1.6;
+    background-color: #f7f8fa;
+    color: #333;
+    line-height: 1.7;
+    padding: 20px;
 }
 
-/* Header */
-header {
-    background-color: var(--primary-color);
-    padding: 40px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 3rem;
-    color: var(--secondary-color);
-}
-
-header .intro {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    color: var(--secondary-color);
-}
-
-header .contact-info {
-    margin-top: 20px;
-}
-
-header .contact-item {
-    text-decoration: none;
-    color: var(--secondary-color);
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-header .contact-item:hover {
-    color: var(--accent-color);
-}
-
-/* Section styles */
-.section {
-    padding: 60px 20px;
-}
-
-.bg-light {
-    background-color: #fafafa;
-}
-
+/* Conteneur global */
 .container {
+    width: 85%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* About section */
-#about .profile-image {
-    border-radius: 50%;
-    max-width: 150px;
-    margin-top: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Header */
+header {
+    background-color: #0A192F;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
 }
 
-#about p {
-    font-size: 1.1rem;
-    color: var(--secondary-color);
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
-/* Skills Section */
-.skills-list {
+header p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
-.skill {
-    background-color: var(--primary-color);
+nav ul li a {
+    color: #F1F1F1;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Section */
+.section {
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+    font-size: 2.3em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #0A192F;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+    font-size: 1.1em;
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-size: 1.5em;
+}
+
+/* Expérience */
+.experience {
+    background-color: #F1F1F1;
+    padding: 25px;
+    margin-bottom: 25px;
     border-radius: 8px;
-    padding: 20px;
-    width: 45%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.skill:hover {
-    transform: scale(1.05);
+.experience h3 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
-.skill h3 {
-    color: var(--secondary-color);
+.experience p {
+    margin-top: 10px;
+    line-height: 1.7;
+    font-size: 1em;
+    color: #555;
 }
 
 /* Footer */
 footer {
-    background-color: var(--secondary-color);
+    background-color: #0A192F;
     color: white;
-    padding: 20px 0;
     text-align: center;
-    font-size: 1rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
 }
 
 footer p {
-    font-size: 1.2rem;
-    color: white;
+    font-size: 0.9em;
+    color: #B0B0B0;
 }
+
+.cv-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cv-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
