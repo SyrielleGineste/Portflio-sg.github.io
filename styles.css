@@ -21,7 +21,19 @@ header {
   padding: 20px;
   text-align: center;
 }
+#hero {
+  text-align: center; /* Centre le contenu */
+  margin: 20px 0;
+}
 
+#hero img {
+  width: 150px; /* Taille de la photo */
+  height: 150px;
+  border-radius: 50%; /* Rend la photo ronde */
+  border: 3px solid var(--accent-color); /* Ajoute une bordure */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+  margin-top: 10px; /* Ajoute un espace entre le prénom et la photo */
+}
 header h1 {
   margin: 0;
   font-size: 2rem;
