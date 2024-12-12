@@ -3,8 +3,10 @@
   --primary-color: #001F54; /* Bleu marine */
   --accent-color: #007ACC; /* Bleu clair */
   --text-color: #333;
+  --secondary-color: #f5f5f5; /* Fond clair */
 }
 
+/* Global Styles */
 body {
   font-family: 'Arial', sans-serif;
   color: var(--text-color);
@@ -21,10 +23,6 @@ header {
   padding: 20px;
   text-align: center;
 }
-#hero {
-  text-align: center; /* Centre le contenu */
-  margin: 20px 0;
-}
 
 #hero img {
   width: 150px; /* Taille de la photo */
@@ -34,6 +32,7 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
   margin-top: 10px; /* Ajoute un espace entre le prénom et la photo */
 }
+
 header h1 {
   margin: 0;
   font-size: 2rem;
@@ -89,7 +88,7 @@ ul {
 }
 
 /* Experience */
-.experience h3 {
+.job h3 {
   color: var(--accent-color);
   margin-bottom: 5px;
 }
