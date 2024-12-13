@@ -112,6 +112,39 @@ ul {
   padding-left: 20px;
 }
 
+/* Logos Section */
+#logos {
+  text-align: ;
+  margin: 40px 0;
+}
+
+#logos h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logos-container img {
+  max-width: 100px; /* Taille maximale des logos */
+  height: auto;
+  border-radius: 10px; /* Coins légèrement arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logos-container img:hover {
+  transform: scale(1.1); /* Agrandissement au survol */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+
 /* Experience */
 .job {
   margin-bottom: 20px;
