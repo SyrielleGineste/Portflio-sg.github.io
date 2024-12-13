@@ -17,6 +17,14 @@ body {
   background-color: var(--secondary-color);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Header */
 header {
   background-color: var(--primary-color);
@@ -28,10 +36,10 @@ header {
 #hero img {
   width: 150px; /* Taille de la photo */
   height: 150px;
-  border-radius: 50%; /* Rend la photo ronde */
+  border-radius: 50%;
   border: 3px solid var(--accent-color); /* Ajoute une bordure */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
-  margin-top: 10px; /* Ajoute un espace entre le prénom et la photo */
+  margin-top: 10px;
 }
 
 header h1 {
